@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      header {
+        background-color: cornflowerblue;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 10px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 25px 0 black;
+      }
+
+      header * {
+        display: inline;
+      }
+      header li {
+        margin: 10px;
+      }
+      header li a {
+        color: yellow;
+        text-decoration: none;
+      }
+
+      body {
+        background-color: beige;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        body {
+          background-color: lightblue;
+        }
+        header {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"> Home </a>
+          </li>
+          <li>
+            <a href="#"> About </a>
+          </li>
+          <li>
+            <a href="#"> Contact </a>
+          </li>
+          <li><a href="#"> Terms of use </a></li>
+          <li>
+            <a href="#"> Join Us </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

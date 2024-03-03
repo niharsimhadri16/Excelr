@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Input control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Form Input controls Example</h1>
+    <div>
+      <form action="/action_page.php">
+        <label for="Name">Name:</label>
+        <input
+          type="text"
+          id="Name"
+          name="Name"
+          placeholder="Enter your name"
+        />
+        <label for="Password">Password:</label>
+        <input type="password" placeholder="Enter your password" />
+
+        <label for="Email">Email:</label><br />
+        <input type="email" placeholder="Enter your mail" />
+
+        <label for="Age">Age:</label>
+        <input type="number" placeholder="Enter age" size="5" />
+
+        <label for="Rating">Rating:</label>
+        <input type="range" />
+
+        <label for="birthday">Date of Birth:</label>
+        <br />
+        <br />
+        <input type="date" id="birthday" name="birthday" />
+
+        <label for="Timess">Select a time:</label>
+        <input type="time" id="appt" name="Timess" />
+
+        <label for="Image">Image:</label>
+        <img src="url" alt="150 x 50" /><br />
+        <br />
+
+        <label for="week">Week:</label>
+        <input type="week" name="week" id="week" required />
+        <br />
+        <br />
+        <label for="Month">Month</label>
+        <input type="month" name="month" id="month" required />
+        <br />
+        <br />
+
+        <label for="Datetime-Local">Datetime-Local</label>
+        <input type="datetime-local" />
+        <p>
+          <label for="URL">URL:</label>
+          <input type="url" />
+        </p>
+        <p>
+          <label for="search">search:</label>
+          <input type="Search" />
+        </p>
+
+        <p>
+          <label for="Gender">Gender:<br /></label> <input type="radio" /><label
+            for="Gender"
+            >Male</label
+          >
+          <input type="radio" /><label for="Gender">Female</label>
+        </p>
+
+        <p>
+          <label for="Interests">Interests:<br /></label>
+          <input type="checkbox" /><label for="reading">Reading</label>
+          <input type="checkbox" /><label for="Sports">Sports Country:</label>
+          <select name="Country" id="Country" size="1">
+            <option value="America">America</option>
+            <option value="India">India</option>
+            <option value="Bharath">Bharath</option>
+          </select>
+          <label for="Message"> Message:<br /></label>
+          <textarea id="Message" aria-setsize="20"Message" rows="3" required></textarea>
+          <button type="send"  value="Submit">Submit</button>
+
+
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
