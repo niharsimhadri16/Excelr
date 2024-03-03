@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student Survey</title>
+    <style>
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <form action="#" method="post">
+        <h1>Student Survey</h1>
+        <div>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder=" nihar"
+          />
+        </div>
+        <div>
+          <label for="address">Street Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            required
+            placeholder="nihar"
+          />
+        </div>
+        <div>
+          <label for="city">City:</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            required
+            placeholder="nihar"
+          />
+        </div>
+        <div>
+          <label for="state">State:</label>
+          <input
+            type="text"
+            id="state"
+            name="state"
+            required
+            placeholder="nihar"
+          />
+        </div>
+        <div>
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" name="zip" required placeholder="nihar" />
+        </div>
+        <div>
+          <label for="telephone">Telephone:</label>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            required
+            placeholder="984813045"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="hi"
+          />
+        </div>
+        <div>
+          <label for="url">URL:</label>
+          <input type="url" id="url" name="url" required placeholder=".com" />
+        </div>
+        <div>
+          <label for="surveyDate">Date of Survey:</label>
+          <input type="date" id="surveyDate" name="surveyDate" required />
+        </div>
+        <div>
+          <label for="likedMost">What did you like most about the campus?</label
+          ><br />
+          <input
+            type="checkbox"
+            id="students"
+            name="likedMost"
+            value="students"
+          />
+          <label for="students">Students</label><br />
+          <input
+            type="checkbox"
+            id="location"
+            name="likedMost"
+            value="location"
+          />
+          <label for="location">Location</label><br />
+          <input type="checkbox" id="campus" name="likedMost" value="campus" />
+          <label for="campus">Campus</label><br />
+          <input
+            type="checkbox"
+            id="atmosphere"
+            name="likedMost"
+            value="atmosphere"
+          />
+          <label for="atmosphere">Atmosphere</label><br />
+          <input
+            type="checkbox"
+            id="dormRooms"
+            name="likedMost"
+            value="dormRooms"
+          />
+          <label for="dormRooms">Dorm Rooms</label><br />
+          <input type="checkbox" id="sports" name="likedMost" value="sports" />
+          <label for="sports">Sports</label>
+        </div>
+        <div>
+          <label>How did you become interested in the university?</label><br />
+          <input
+            type="radio"
+            id="friends"
+            name="interest"
+            value="friends"
+            required
+          />
+          <label for="friends">Friends</label><br />
+          <input
+            type="radio"
+            id="television"
+            name="interest"
+            value="television"
+            required
+          />
+          <label for="television">Television</label><br />
+          <input
+            type="radio"
+            id="internet"
+            name="interest"
+            value="internet"
+            required
+          />
+          <label for="internet">Internet</label><br />
+          <input
+            type="radio"
+            id="other"
+            name="interest"
+            value="other"
+            required
+          />
+          <label for="other">Other</label>
+        </div>
+        <div>
+          <label for="additionalComments">Additional Comments:</label><br />
+          <textarea
+            id="additionalComments"
+            name="additionalComments"
+            rows="4"
+            cols="50"
+            placeholder="Enter your comments here"
+          ></textarea>
+        </div>
+        <div>
+          <label for="graduationMonth">School Graduation Month:</label>
+          <input
+            list="months"
+            id="graduationMonth"
+            name="graduationMonth"
+            required
+          />
+          <datalist id="months">
+            <option value="January"></option>
+            <option value="February"></option>
+            <option value="March"></option>
+            <option value="April"></option>
+            <option value="May"></option>
+            <option value="June"></option>
+            <option value="July"></option>
+            <option value="August"></option>
+            <option value="September"></option>
+            <option value="October"></option>
+            <option value="November"></option>
+            <option value="December"></option>
+          </datalist>
+        </div>
+        <div>
+          <label for="graduationYear">High School Graduation Year:</label>
+          <input
+            type="text"
+            id="graduationYear"
+            name="graduationYear"
+            required
+            placeholder="2024"
+          />
+        </div>
+        <div>
+          <label for="recommendation">Likelihood of Recommending:</label>
+
+          <select id="recommendation" name="recommendation" required>
+            <option value="options">Select an option</option>
+            <option value="veryLikely">Very Likely</option>
+            <option value="likely">Likely</option>
+            <option value="unlikely">Unlikely</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
